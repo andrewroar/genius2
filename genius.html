@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>gfdg</h1>
+  </body>
+
+  <script>
+    $(document).ready(function () {
+      var settings = {
+        url: "api.genius.com/search?q=Pressure pushing down on me",
+        method: "GET",
+        timeout: 0,
+        headers: {
+          Authorization:
+            "Bearer tdLp0t9RUOxVPkCFnOR-dgJRxjkxJfRIjtTqbpz3VPASW-qhG8pXs471v1CsQ9se",
+          Cookie: "__cfduid=d9a0c939d3b2fa4382f55c9729828c6b31588362182",
+        },
+      };
+
+      $.ajax(settings).done(function (response) {
+        console.log(response);
+      });
+    });
+  </script>
+</html>
